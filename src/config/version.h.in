@@ -2,11 +2,11 @@
 #define STR(x) STR_HELPER(x)
 
 #define PROJECT_NAME "Dero Gold"
-#define PROJECT_SITE "http://derogold.tq"
-#define PROJECT_COPYRIGHT "Copyright 2019, The Dero Gold Association"
+#define PROJECT_SITE "https://github.com/nimbocoin/nimbocoin"
+#define PROJECT_COPYRIGHT "Copyright 2020-2021, The Nimbo Project"
 
 #define APP_VER_MAJOR 0
-#define APP_VER_MINOR 5
+#define APP_VER_MINOR 1
 #define APP_VER_REV 0
 #define APP_VER_BUILD 1
 
