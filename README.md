@@ -1,8 +1,21 @@
-![image](https://i.imgur.com/4FlvRAt.png)
+![image](https://i.imgur.com/E9lN4yB.png)
+
+# NimboCoin (NIMB)
+
+### Specs
+* Algorithm - Cryptonight Turtle (ASIC resistant)
+* Max Supply - 30,000,000,000,000
+* Decimals - 2
+* Blocktime - 90 seconds
+* Emission Speed Factor - 25
+
+### About
+**NimboCoin is created to make crypto fun for beginners. With huge mining rewards and fast block times it's hard not to enjoy this coin! The Cryptonight Turtle Algorithm is ASIC resistant and made for the common tech-junkie. Whether you have a laptop or a gaming rig you can have your share of the loot. Nimbo is all about community. Let's build something together!**
+
 
 ### Installing
 
-We offer binary images of the latest releases here: https://github.com/derogold/derogold/releases
+We offer binary images of the latest releases here: https://github.com/nimbocoin/nimbocoin/releases
 
 If you would like to compile yourself, read on.
 
@@ -35,8 +48,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/nimbocoin/nimbocoin`
+- `cd nimbocoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -45,7 +58,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./NimboCoind --version`
 
 ##### Ubuntu, using Clang
 
