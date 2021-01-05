@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
 // Copyright (c) 2018-2019, The DeroGold Association
-// Copyright (c) 2020-2021, The NimboCoin Developers
+// Copyright (c) 2020-2021, The Nimbo Project
 //
 // Please see the included LICENSE file for more information.
 
@@ -351,7 +351,7 @@ namespace CryptoNote
 
     const char* const SEED_NODES[] = {
         "73.185.199.243:63369", // Nimbo
-       	"198.199.82.235:63369",  // Nimbo-Node-01
-	"67.205.154.10:63369"    // Nimbo-Node-02
+       	"67.205.145.23:63369",  // Nimbo-Node-01
+	"198.199.87.158:63369"    // Nimbo-Node-02
     };
 } // namespace CryptoNote
