@@ -205,10 +205,10 @@ add_dependencies(WalletService version)
 add_dependencies(zedwallet version)
 
 # Finally build the binaries
-set_property(TARGET DeroGoldd PROPERTY OUTPUT_NAME "DeroGoldd")
+set_property(TARGET DeroGoldd PROPERTY OUTPUT_NAME "NimboCoind")
 set_property(TARGET zedwallet PROPERTY OUTPUT_NAME "zedwallet")
 set_property(TARGET zedwallet++ PROPERTY OUTPUT_NAME "zedwallet-beta")
-set_property(TARGET WalletService PROPERTY OUTPUT_NAME "DeroGold-service")
+set_property(TARGET WalletService PROPERTY OUTPUT_NAME "NimboCoin-service")
 set_property(TARGET miner PROPERTY OUTPUT_NAME "miner")
 set_property(TARGET cryptotest PROPERTY OUTPUT_NAME "cryptotest")
 set_property(TARGET WalletApi PROPERTY OUTPUT_NAME "wallet-api")
