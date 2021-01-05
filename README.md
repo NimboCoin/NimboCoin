@@ -12,6 +12,9 @@
 ### About
 **NimboCoin is created to make crypto fun for beginners. With huge mining rewards and fast block times it's hard not to enjoy this coin! The Cryptonight Turtle Algorithm is ASIC resistant and made for the common tech-junkie. Whether you have a laptop or a gaming rig you can have your share of the loot. Nimbo is all about community. Let's build something together!**
 
+### All tips for development go to:
+*Nimbo25fpAo7Qoyn5vx17dJCCghrXrjLk9xRSBMMQqstFNsaBFjdvGVYx9oXqiBQUfANpsHnyJmQqZqikCjZQbcT2E4dctRQoL
+
 
 ### Installing
 
