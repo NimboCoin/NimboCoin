@@ -2,6 +2,7 @@
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
 // Copyright (c) 2018-2019, The DeroGold Association
+// Copyright (c) 2020-2021, The NimboCoin Developers
 //
 // Please see the included LICENSE file for more information.
 
@@ -19,9 +20,9 @@ namespace CryptoNote
 {
     namespace parameters
     {
-        const uint64_t DIFFICULTY_TARGET = 10; // seconds
+        const uint64_t DIFFICULTY_TARGET = 90; // seconds
 
-        const uint64_t DIFFICULTY_TARGET_V2 = 20; // seconds
+        const uint64_t DIFFICULTY_TARGET_V2 = 180; // seconds
 
 	const uint64_t DIFFICULTY_TARGET_V3 = 300; // seconds
 
@@ -38,7 +39,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 8411;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xded81;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 120;
 
@@ -51,11 +52,11 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(10000000000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(3000000000000000);
 
-        const unsigned EMISSION_SPEED_FACTOR = 23;
+        const unsigned EMISSION_SPEED_FACTOR = 26;
 
-        const uint32_t EMISSION_SPEED_FACTOR_V2 = 24;
+        const uint32_t EMISSION_SPEED_FACTOR_V2 = 27;
 
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -65,7 +66,7 @@ namespace CryptoNote
         const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT = 700000;
 
         const char GENESIS_COINBASE_TX_HEX[] =
-            "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+            "011401ff0001fbbda815029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121011c90d1138b9f4e56c8bb0b3f448b434b103dc1c0230ea7fb821d1d4ca7c575a1";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -74,7 +75,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1545261161;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 0;
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
@@ -93,7 +94,7 @@ namespace CryptoNote
         const uint64_t MINIMUM_FEE = UINT64_C(10);
 
         /* Fee adjusting V1 1470000 */
-        const uint64_t MINIMUM_FEE_V1 = UINT64_C(1000000);
+        const uint64_t MINIMUM_FEE_V1 = UINT64_C(1000);
 
         const uint64_t MINIMUM_FEE_V1_HEIGHT = 1470000;
 
@@ -152,11 +153,11 @@ namespace CryptoNote
         /* For new projects forked from this code base, the values immediately below
            should be changed to 0 to prevent issues with transaction processing
            and other possible unexpected behavior */
-        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 700000;
+        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
 
-        const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT = 1800000;
+        const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT = 0;
 
-        const uint64_t TRANSACTION_INPUT_BLOCKTIME_VALIDATION_HEIGHT = 1600000;
+        const uint64_t TRANSACTION_INPUT_BLOCKTIME_VALIDATION_HEIGHT = 0;
 
         /* This describes how many blocks of "wiggle" room transactions have regarding
            when the outputs can be spent based on a reasonable belief that the outputs
@@ -206,7 +207,7 @@ namespace CryptoNote
 
 	const uint32_t UPGRADE_HEIGHT_V6 = 2325000; // Upgrade height for DIFFICULTY_TARGET_V3
 
-        const uint32_t UPGRADE_HEIGHT_CURRENT = UPGRADE_HEIGHT_V6;
+        const uint32_t UPGRADE_HEIGHT_CURRENT = UPGRADE_HEIGHT_V5;
 
         const unsigned UPGRADE_VOTING_THRESHOLD = 90; // percent
         const uint32_t UPGRADE_VOTING_WINDOW = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
@@ -227,7 +228,7 @@ namespace CryptoNote
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 5;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 0;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -255,7 +256,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "DeroGold";
+    const char CRYPTONOTE_NAME[] = "NimboCoin";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -290,9 +291,9 @@ namespace CryptoNote
 
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 100;
 
-    const int P2P_DEFAULT_PORT = 42069;
+    const int P2P_DEFAULT_PORT = 63369;
 
-    const int RPC_DEFAULT_PORT = 6969;
+    const int RPC_DEFAULT_PORT = 63370;
 
     const int SERVICE_DEFAULT_PORT = 1337;
 
@@ -341,17 +342,16 @@ namespace CryptoNote
     const uint64_t DATABASE_MAX_BYTES_FOR_LEVEL_BASE = 20 * DATABASE_WRITE_BUFFER_MB_DEFAULT_SIZE; //  /not using
 #endif
 
-    const char LATEST_VERSION_URL[] = "https://github.com/derogold/derogold/releases";
+    const char LATEST_VERSION_URL[] = "https://github.com/nimbocoin/nimbocoin";
 
-    const std::string LICENSE_URL = "https://github.com/derogold/derogold/blob/master/LICENSE";
+    const std::string LICENSE_URL = "https://github.com/nimbocoin/nimbocoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
+        {0x13, 0x01, 0x31, 0x61, 0x16, 0x33, 0x66, 0x99, 0x96, 0x19, 0x91, 0x14, 0x36, 0x93, 0x63, 0x39}};
 
     const char* const SEED_NODES[] = {
-        "195.154.81.135:12169", // bob bie
-        "135.181.23.12:42069", // Pluto
-        "91.239.237.54:42069", // Leo Cuvée CZ
-        "46.214.70.196:42069", // derogold4ever.online
+        "73.185.199.243:63369", // Nimbo
+       	"198.199.82.235:63369",  // Nimbo-Node-01
+	"67.205.154.10:63369"    // Nimbo-Node-02
     };
 } // namespace CryptoNote
