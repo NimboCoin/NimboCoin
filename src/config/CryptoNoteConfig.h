@@ -351,7 +351,7 @@ namespace CryptoNote
 
     const char* const SEED_NODES[] = {
         "73.185.199.243:63369", // Nimbo
-       	"134.122.6.54:63369",  // Nimbo-Node-01
-	"45.55.60.236:63369"    // Nimbo-Node-02
+       	"143.110.239.16:63369",  // Nimbo-Node-01
+	"143.110.239.14:63369"    // Nimbo-Node-02
     };
 } // namespace CryptoNote
