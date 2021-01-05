@@ -8,28 +8,40 @@
 #include <iostream>
 #pragma once
 
-const std::string asciiArt =
-"            .:|iv2X##mB#Xovi;..           \n"
-"         .=inno2XXZ##mBmmm#mXwa;.         \n"
-"       _ivnnnooSSXZ##mBBmm#ZZX2ooi:       \n"
-"     _vo2onnnno2SSXXU######ZXX22nvv|.     \n"
-"    <dSSS2onnn11I|++~~+|*YXXSoonvvlii:    \n"
-"  .vmXXXSS2o1+-- . .   . - =|1vvvliii|;   \n"
-"  vdXXZZXX2>-                -+iii|i||+;  \n"
-" iXXXZZZZ2~  ..:..:____..      -<||++++=: \n"
-".oSSSXXXe`   .-=vnnommmpa;.      =+===:-. \n"
-"|nooo222~      .n2nSZ##o1l>      .: .     \n"
-"ivvnnnnl       .XXSnXmXIi|=:              \n"
-"iililii=        v2oSXX>==;;:    .  .   .  \n"
-"||+|+|+:       .||lnoZns|||=    ==========\n"
-":;;;;;;:       .voXXoZmXonv=.  .|||||||+|=\n"
-".==++|||.      .3ZXooXmBmX}.   .<ii||||||:\n"
-" <|iiills.     .3X11nXX#S(-     :vllliii| \n"
-" =ivvvnnon,.    --------      ._uvvvvvli= \n"
-"  <vno22XSoc.   . . . .     ..voXo2onvv+  \n"
-"   {nSSXXXZZqs,. .       ..=umZZZXX2on>   \n"
-"    +X2XXZZZXSoos|;;_==|vomm#####XXXe+    \n"
-"     -{XXUZXXX22nvnnooXXZ#mmBmm##ZZ}-     \n"
-"       +*SXXS22onnno2XXZ###mWmm#U}+       \n"
-"         -+{12nnvnno2SXXXZZ##UY+-         \n"
-"            --=||Ivo22S22nI|~-            \n";
+const std::string windowsAsciiArt =
+
+"\n              //  888b    888 8888888 888b     d888 888888b.    .d88888b.         \n"
+"              //  8888b   888   888   8888b   d8888 888   88b  d88P  Y88b         \n"
+"              //  88888b  888   888   88888b.d88888 888  .88P  888     888        \n"
+"              //  888Y88b 888   888   888Y88888P888 8888888K.  888     888        \n"
+"              //  888 Y88b888   888   888 Y888P 888 888   Y88b 888     888        \n"
+"              //  888  Y88888   888   888  Y8P  888 888    888 888     888        \n"
+"              //  888   Y8888   888   888       888 888   d88P Y88b. .d88P        \n"
+"              //  888    Y888 8888888 888       888 8888888P     Y88888P          \n";
+
+
+
+
+
+
+const std::string nonWindowsAsciiArt =
+"\n                 ███╗   ██╗██╗███╗   ███╗██████╗  ██████╗            \n"
+"                 ████╗  ██║██║████╗ ████║██╔══██╗██╔═══██╗           \n"
+"                 ██╔██╗ ██║██║██╔████╔██║██████╔╝██║   ██║           \n"
+"                 ██║╚██╗██║██║██║╚██╔╝██║██╔══██╗██║   ██║           \n"
+"                 ██║ ╚████║██║██║ ╚═╝ ██║██████╔╝╚██████╔╝           \n"
+"                 ╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═════╝  ╚═════╝            \n";
+
+
+
+
+/* Windows has some characters it won't display in a terminal. If your ascii
+   art works fine on Windows and Linux terminals, just replace 'asciiArt' with
+   the art itself, and remove these two #ifdefs and above ascii arts */
+#ifdef _WIN32
+
+const std::string asciiArt = windowsAsciiArt;
+
+#else
+const std::string asciiArt = nonWindowsAsciiArt;
+#endif
