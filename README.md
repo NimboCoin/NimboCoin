@@ -7,7 +7,7 @@
 * Max Supply - 30,000,000,000,000
 * Decimals - 2
 * Blocktime - 90 seconds
-* Emission Speed Factor - 25
+* Emission Speed Factor - 26
 
 ### About
 **NimboCoin is created to make crypto fun for beginners. With huge mining rewards and fast block times it's hard not to enjoy this coin! The Cryptonight Turtle Algorithm is ASIC resistant and made for the common tech-junkie. Whether you have a laptop or a gaming rig you can have your share of the loot. Nimbo is all about community. Let's build something together!**
