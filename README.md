@@ -1,4 +1,4 @@
-![image](https://i.imgur.com/E9lN4yB.png)
+![image](https://avatars.githubusercontent.com/u/76657701?s=200&v=4)
 
 # NimboCoin (NIMB)
 
